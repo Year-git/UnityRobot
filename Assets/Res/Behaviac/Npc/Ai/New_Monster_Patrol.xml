@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\New_Monster_Patrol.xml-->
+<behavior name="Npc/Ai/New_Monster_Patrol" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="vector&lt;int&gt;" value="0:" />
+    <par name="nRandomAngle" type="int" value="0" />
+    <par name="nRandomDis" type="int" value="0" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.BaseBehaviac::TaskArrayIntRef(0:)" />
+    <property IsHTN="false" />
+    <node class="Sequence" id="2">
+      <node class="Assignment" id="1">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[5]" />
+        <property Opr="Self.NpcBehaviac::GetEnemyNpcInView()" />
+      </node>
+      <node class="IfElse" id="14">
+        <node class="Condition" id="4">
+          <property Operator="Greater" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[5]" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="Assignment" id="5">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="IfElse" id="15">
+          <node class="Condition" id="16">
+            <property Operator="GreaterEqual" />
+            <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+            <property Opr="int Self.NpcBehaviac::_$local_task_param_$_0[4]" />
+          </node>
+          <node class="Sequence" id="17">
+            <node class="Compute" id="18">
+              <property Operator="Add" />
+              <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[4]" />
+              <property Opr1="Self.BaseBehaviac::GetRandomValByRange(0,int Self.NpcBehaviac::_$local_task_param_$_0[1])" />
+              <property Opr2="Self.BaseBehaviac::GetFrameSynRunTime()" />
+            </node>
+            <node class="Assignment" id="19">
+              <property CastRight="false" />
+              <property Opl="int Self.NpcBehaviac::nRandomAngle" />
+              <property Opr="Self.BaseBehaviac::GetRandomValByRange(0,90)" />
+            </node>
+            <node class="Assignment" id="20">
+              <property CastRight="false" />
+              <property Opl="int Self.NpcBehaviac::nRandomDis" />
+              <property Opr="Self.BaseBehaviac::GetRandomValByRange(0,int Self.NpcBehaviac::_$local_task_param_$_0[0])" />
+            </node>
+            <node class="Action" id="21">
+              <property Method="Self.NpcBehaviac::MoveToPlace(int Self.NpcBehaviac::nRandomAngle,int Self.NpcBehaviac::nRandomDis)" />
+              <property ResultOption="BT_SUCCESS" />
+            </node>
+            <node class="Assignment" id="22">
+              <property CastRight="false" />
+              <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+              <property Opr="const int 1" />
+            </node>
+          </node>
+          <node class="Noop" id="23" />
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>

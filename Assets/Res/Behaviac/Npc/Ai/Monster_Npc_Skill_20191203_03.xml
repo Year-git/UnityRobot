@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\Monster_Npc_Skill_20191203_03.xml-->
+<behavior name="Npc/Ai/Monster_Npc_Skill_20191203_03" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="vector&lt;int&gt;" value="0:" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.BaseBehaviac::TaskArrayIntRef(0:)" />
+    <property IsHTN="false" />
+    <node class="Selector" id="34">
+      <node class="Action" id="1">
+        <property Method="Self.NpcBehaviac::MoveStop()" />
+        <property ResultOption="BT_SUCCESS" />
+        <attachment class="Precondition" id="36" flag="precondition">
+          <property BinaryOperator="And" />
+          <property Operator="Equal" />
+          <property Opl="Self.NpcBehaviac::SkillIsDoStage(int Self.NpcBehaviac::_$local_task_param_$_0[1],BeforeUpdate)" />
+          <property Opr2="const bool true" />
+          <property Phase="Enter" />
+        </attachment>
+      </node>
+      <node class="Action" id="44">
+        <property Method="Self.NpcBehaviac::MoveToNpc(int Self.NpcBehaviac::_$local_task_param_$_0[2])" />
+        <property ResultOption="BT_SUCCESS" />
+        <attachment class="Precondition" id="45" flag="precondition">
+          <property BinaryOperator="And" />
+          <property Operator="Equal" />
+          <property Opl="Self.NpcBehaviac::SkillIsDoStage(int Self.NpcBehaviac::_$local_task_param_$_0[1],DurationUpdate)" />
+          <property Opr2="const bool true" />
+          <property Phase="Enter" />
+        </attachment>
+      </node>
+      <node class="Action" id="53">
+        <property Method="Self.NpcBehaviac::MoveStop()" />
+        <property ResultOption="BT_SUCCESS" />
+        <attachment class="Precondition" id="54" flag="precondition">
+          <property BinaryOperator="And" />
+          <property Operator="Equal" />
+          <property Opl="Self.NpcBehaviac::SkillIsDoStage(int Self.NpcBehaviac::_$local_task_param_$_0[1],AfterUpdate)" />
+          <property Opr2="const bool true" />
+          <property Phase="Enter" />
+        </attachment>
+      </node>
+    </node>
+  </node>
+</behavior>

@@ -1,0 +1,7 @@
+require("Manager/BloodMgr")
+require("Manager/EventMgr")
+require("Manager/CoroutineMgr")
+require("Manager/NetworkMgr")
+require("Manager/MapMgr")
+require("Manager/StatusMgr")
+require("Manager/ViewMgr")

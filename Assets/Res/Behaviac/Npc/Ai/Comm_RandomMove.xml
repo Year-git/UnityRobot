@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\Comm_RandomMove.xml-->
+<behavior name="Npc/Ai/Comm_RandomMove" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="vector&lt;int&gt;" value="0:" />
+    <par name="nMoveTimeRecord" type="int" value="0" />
+    <par name="nMoveAngleRecord" type="int" value="0" />
+    <par name="bInit" type="bool" value="false" />
+    <par name="IsSwitchDir" type="int" value="0" />
+    <par name="nDisVal" type="int" value="0" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.BaseBehaviac::TaskArrayIntRef(0:)" />
+    <property IsHTN="false" />
+    <node class="Sequence" id="1">
+      <node class="IfElse" id="8">
+        <node class="Condition" id="2">
+          <property Operator="Equal" />
+          <property Opl="bool Self.NpcBehaviac::bInit" />
+          <property Opr="const bool false" />
+        </node>
+        <node class="Sequence" id="3">
+          <node class="Assignment" id="7">
+            <property CastRight="false" />
+            <property Opl="bool Self.NpcBehaviac::bInit" />
+            <property Opr="const bool true" />
+          </node>
+          <node class="Compute" id="5">
+            <property Operator="Add" />
+            <property Opl="int Self.NpcBehaviac::nMoveTimeRecord" />
+            <property Opr1="Self.BaseBehaviac::GetRandomValByRange(int Self.NpcBehaviac::_$local_task_param_$_0[1],int Self.NpcBehaviac::_$local_task_param_$_0[2])" />
+            <property Opr2="Self.BaseBehaviac::GetFrameSynRunTime()" />
+          </node>
+          <node class="Compute" id="30">
+            <property Operator="Mul" />
+            <property Opl="int Self.NpcBehaviac::nDisVal" />
+            <property Opr1="Self.NpcBehaviac::NpcAttrGet(Speed,Base)" />
+            <property Opr2="int Self.NpcBehaviac::nMoveTimeRecord" />
+          </node>
+          <node class="Compute" id="29">
+            <property Operator="Div" />
+            <property Opl="int Self.NpcBehaviac::nDisVal" />
+            <property Opr1="int Self.NpcBehaviac::nDisVal" />
+            <property Opr2="const int 1000" />
+          </node>
+          <node class="Assignment" id="6">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+            <property Opr="Self.BaseBehaviac::GetRandomValByRange(int Self.NpcBehaviac::_$local_task_param_$_0[3],int Self.NpcBehaviac::_$local_task_param_$_0[4])" />
+          </node>
+          <node class="IfElse" id="20">
+            <node class="Condition" id="21">
+              <property Operator="Equal" />
+              <property Opl="int Self.NpcBehaviac::IsSwitchDir" />
+              <property Opr="const int 1" />
+            </node>
+            <node class="Compute" id="22">
+              <property Operator="Mul" />
+              <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+              <property Opr1="int Self.NpcBehaviac::nMoveAngleRecord" />
+              <property Opr2="const int -1" />
+            </node>
+            <node class="Noop" id="23" />
+          </node>
+          <node class="IfElse" id="31">
+            <node class="Condition" id="32">
+              <property Operator="Less" />
+              <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+              <property Opr="const int 0" />
+            </node>
+            <node class="Compute" id="34">
+              <property Operator="Add" />
+              <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+              <property Opr1="const int 360" />
+              <property Opr2="int Self.NpcBehaviac::nMoveAngleRecord" />
+            </node>
+            <node class="Noop" id="33" />
+          </node>
+          <node class="IfElse" id="18">
+            <node class="Condition" id="19">
+              <property Operator="Equal" />
+              <property Opl="Self.NpcBehaviac::IsCanMoveToPlace(int Self.NpcBehaviac::nMoveAngleRecord,int Self.NpcBehaviac::nDisVal)" />
+              <property Opr="const bool true" />
+            </node>
+            <node class="Action" id="16">
+              <property Method="Self.NpcBehaviac::TurnToPlace(int Self.NpcBehaviac::nMoveAngleRecord)" />
+              <property ResultOption="BT_SUCCESS" />
+            </node>
+            <node class="Sequence" id="24">
+              <node class="IfElse" id="25">
+                <node class="Condition" id="26">
+                  <property Operator="Equal" />
+                  <property Opl="int Self.NpcBehaviac::IsSwitchDir" />
+                  <property Opr="const int 0" />
+                </node>
+                <node class="Assignment" id="27">
+                  <property CastRight="false" />
+                  <property Opl="int Self.NpcBehaviac::IsSwitchDir" />
+                  <property Opr="const int 1" />
+                </node>
+                <node class="Assignment" id="28">
+                  <property CastRight="false" />
+                  <property Opl="int Self.NpcBehaviac::IsSwitchDir" />
+                  <property Opr="const int 0" />
+                </node>
+              </node>
+              <node class="Compute" id="37">
+                <property Operator="Mul" />
+                <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+                <property Opr1="int Self.NpcBehaviac::nMoveAngleRecord" />
+                <property Opr2="const int -1" />
+              </node>
+              <node class="IfElse" id="39">
+                <node class="Condition" id="40">
+                  <property Operator="Less" />
+                  <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+                  <property Opr="const int 0" />
+                </node>
+                <node class="Compute" id="41">
+                  <property Operator="Add" />
+                  <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+                  <property Opr1="const int 360" />
+                  <property Opr2="int Self.NpcBehaviac::nMoveAngleRecord" />
+                </node>
+                <node class="Noop" id="42" />
+              </node>
+              <node class="Action" id="43">
+                <property Method="Self.NpcBehaviac::TurnToPlace(int Self.NpcBehaviac::nMoveAngleRecord)" />
+                <property ResultOption="BT_SUCCESS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node class="Noop" id="4" />
+      </node>
+      <node class="IfElse" id="9">
+        <node class="Condition" id="10">
+          <property Operator="GreaterEqual" />
+          <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+          <property Opr="int Self.NpcBehaviac::nMoveTimeRecord" />
+        </node>
+        <node class="Sequence" id="11">
+          <node class="Assignment" id="12">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[0]" />
+            <property Opr="const int 0" />
+          </node>
+          <node class="Assignment" id="14">
+            <property CastRight="false" />
+            <property Opl="bool Self.NpcBehaviac::bInit" />
+            <property Opr="const bool false" />
+          </node>
+          <node class="Assignment" id="13">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::nMoveTimeRecord" />
+            <property Opr="const int 0" />
+          </node>
+          <node class="Assignment" id="17">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::nMoveAngleRecord" />
+            <property Opr="const int 0" />
+          </node>
+        </node>
+        <node class="Action" id="15">
+          <property Method="Self.NpcBehaviac::MoveToAngle(0)" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>

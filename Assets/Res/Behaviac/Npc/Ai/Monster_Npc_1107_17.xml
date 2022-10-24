@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\Monster_Npc_1107_17.xml-->
+<behavior name="Npc/Ai/Monster_Npc_1107_17" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="Array01" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array02" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array03" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array04" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array05" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array06" type="vector&lt;int&gt;" value="0:" />
+    <par name="Array07" type="vector&lt;int&gt;" value="0:" />
+    <par name="Bool01" type="bool" value="false" />
+    <par name="Int01" type="int" value="0" />
+    <par name="Int02" type="int" value="0" />
+    <par name="Int03" type="int" value="0" />
+    <par name="Int04" type="int" value="0" />
+    <par name="Int05" type="int" value="0" />
+  </pars>
+  <node class="Selector" id="0">
+    <node class="IfElse" id="29">
+      <attachment class="Precondition" id="2" flag="precondition">
+        <property BinaryOperator="And" />
+        <property Operator="Equal" />
+        <property Opl="Self.BaseBehaviac::IsCurCallType(Update)" />
+        <property Opr2="const bool true" />
+        <property Phase="Enter" />
+      </attachment>
+      <node class="Condition" id="3">
+        <property Operator="Equal" />
+        <property Opl="bool Self.NpcBehaviac::Bool01" />
+        <property Opr="const bool true" />
+      </node>
+      <node class="ReferencedBehavior" id="31">
+        <property ReferenceBehavior="const string &quot;Npc/Ai/Comm_CircularMove&quot;" />
+        <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array05)" />
+      </node>
+      <node class="IfElse" id="6">
+        <node class="Condition" id="5">
+          <property Operator="Equal" />
+          <property Opl="Self.BaseBehaviac::IsPlayerNpcDead()" />
+          <property Opr="const bool true" />
+        </node>
+        <node class="Assignment" id="12">
+          <property CastRight="false" />
+          <property Opl="bool Self.NpcBehaviac::Bool01" />
+          <property Opr="const bool true" />
+        </node>
+        <node class="IfElse" id="103">
+          <node class="Condition" id="105">
+            <property Operator="Equal" />
+            <property Opl="int Self.NpcBehaviac::Array06[0]" />
+            <property Opr="const int 1" />
+          </node>
+          <node class="ReferencedBehavior" id="107">
+            <property ReferenceBehavior="const string &quot;Npc/Ai/Comm_RandomMove&quot;" />
+            <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array06)" />
+          </node>
+          <node class="IfElse" id="52">
+            <node class="Condition" id="53">
+              <property Operator="Equal" />
+              <property Opl="int Self.NpcBehaviac::Array07[9]" />
+              <property Opr="const int 1" />
+            </node>
+            <node class="Sequence" id="96">
+              <node class="ReferencedBehavior" id="66">
+                <property ReferenceBehavior="const string &quot;Npc/Ai/Monster_Npc_Skill_02&quot;" />
+                <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array07)" />
+              </node>
+              <node class="IfElse" id="97">
+                <node class="Condition" id="98">
+                  <property Operator="Equal" />
+                  <property Opl="int Self.NpcBehaviac::Array07[21]" />
+                  <property Opr="const int 1" />
+                </node>
+                <node class="Sequence" id="99">
+                  <node class="Assignment" id="101">
+                    <property CastRight="false" />
+                    <property Opl="int Self.NpcBehaviac::Array06[0]" />
+                    <property Opr="const int 1" />
+                  </node>
+                  <node class="Noop" id="102" />
+                </node>
+                <node class="Noop" id="108" />
+              </node>
+            </node>
+            <node class="IfElse" id="59">
+              <node class="Condition" id="62">
+                <property Operator="Equal" />
+                <property Opl="int Self.NpcBehaviac::Array01[9]" />
+                <property Opr="const int 1" />
+              </node>
+              <node class="Sequence" id="85">
+                <node class="ReferencedBehavior" id="34">
+                  <property ReferenceBehavior="const string &quot;Npc/Ai/Monster_Npc_Skill_04&quot;" />
+                  <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array01)" />
+                </node>
+                <node class="IfElse" id="73">
+                  <node class="Condition" id="74">
+                    <property Operator="Equal" />
+                    <property Opl="int Self.NpcBehaviac::Array01[21]" />
+                    <property Opr="const int 1" />
+                  </node>
+                  <node class="Sequence" id="75">
+                    <node class="Assignment" id="76">
+                      <property CastRight="false" />
+                      <property Opl="int Self.NpcBehaviac::Array02[9]" />
+                      <property Opr="const int 1" />
+                    </node>
+                    <node class="Assignment" id="77">
+                      <property CastRight="false" />
+                      <property Opl="int Self.NpcBehaviac::Array02[19]" />
+                      <property Opr="const int 1" />
+                    </node>
+                    <node class="Assignment" id="78">
+                      <property CastRight="false" />
+                      <property Opl="int Self.NpcBehaviac::Array02[15]" />
+                      <property Opr="const int 1" />
+                    </node>
+                  </node>
+                  <node class="Noop" id="79" />
+                </node>
+              </node>
+              <node class="IfElse" id="60">
+                <node class="Condition" id="63">
+                  <property Operator="Equal" />
+                  <property Opl="int Self.NpcBehaviac::Array02[9]" />
+                  <property Opr="const int 1" />
+                </node>
+                <node class="Sequence" id="87">
+                  <node class="ReferencedBehavior" id="88">
+                    <property ReferenceBehavior="const string &quot;Npc/Ai/Monster_Npc_Skill_03&quot;" />
+                    <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array02)" />
+                  </node>
+                  <node class="IfElse" id="56">
+                    <node class="Condition" id="58">
+                      <property Operator="Equal" />
+                      <property Opl="int Self.NpcBehaviac::Array02[21]" />
+                      <property Opr="const int 1" />
+                    </node>
+                    <node class="Sequence" id="80">
+                      <node class="Assignment" id="81">
+                        <property CastRight="false" />
+                        <property Opl="int Self.NpcBehaviac::Array03[9]" />
+                        <property Opr="const int 1" />
+                      </node>
+                      <node class="Assignment" id="82">
+                        <property CastRight="false" />
+                        <property Opl="int Self.NpcBehaviac::Array03[19]" />
+                        <property Opr="const int 1" />
+                      </node>
+                      <node class="Assignment" id="83">
+                        <property CastRight="false" />
+                        <property Opl="int Self.NpcBehaviac::Array03[15]" />
+                        <property Opr="const int 1" />
+                      </node>
+                    </node>
+                    <node class="Noop" id="84" />
+                  </node>
+                </node>
+                <node class="IfElse" id="61">
+                  <node class="Condition" id="64">
+                    <property Operator="Equal" />
+                    <property Opl="int Self.NpcBehaviac::Array03[9]" />
+                    <property Opr="const int 1" />
+                  </node>
+                  <node class="Sequence" id="94">
+                    <node class="ReferencedBehavior" id="109">
+                      <property ReferenceBehavior="const string &quot;Npc/Ai/Monster_Npc_Skill_03&quot;" />
+                      <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array03)" />
+                    </node>
+                    <node class="IfElse" id="110">
+                      <node class="Condition" id="111">
+                        <property Operator="Equal" />
+                        <property Opl="int Self.NpcBehaviac::Array03[21]" />
+                        <property Opr="const int 1" />
+                      </node>
+                      <node class="Sequence" id="112">
+                        <node class="Assignment" id="116">
+                          <property CastRight="false" />
+                          <property Opl="int Self.NpcBehaviac::Array06[0]" />
+                          <property Opr="const int 1" />
+                        </node>
+                        <node class="Action" id="86">
+                          <property Method="Self.NpcBehaviac::MoveStop()" />
+                          <property ResultOption="BT_SUCCESS" />
+                        </node>
+                        <node class="Noop" id="113" />
+                      </node>
+                      <node class="Noop" id="117" />
+                    </node>
+                  </node>
+                  <node class="IfElse" id="13">
+                    <node class="Condition" id="14">
+                      <property Operator="Equal" />
+                      <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Int01)" />
+                      <property Opr="const bool true" />
+                    </node>
+                    <node class="IfElse" id="114">
+                      <node class="Condition" id="115">
+                        <property Operator="GreaterEqual" />
+                        <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+                        <property Opr="int Self.NpcBehaviac::Array01[13]" />
+                      </node>
+                      <node class="IfElse" id="118">
+                        <node class="And" id="119">
+                          <node class="Condition" id="120">
+                            <property Operator="Equal" />
+                            <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array01[6])" />
+                            <property Opr="const bool false" />
+                          </node>
+                          <node class="Condition" id="121">
+                            <property Operator="Equal" />
+                            <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array01[7])" />
+                            <property Opr="const bool true" />
+                          </node>
+                        </node>
+                        <node class="IfElse" id="122">
+                          <node class="Condition" id="123">
+                            <property Operator="Equal" />
+                            <property Opl="Self.NpcBehaviac::IsLookAtPlayer(int Self.NpcBehaviac::Int03)" />
+                            <property Opr="const bool true" />
+                          </node>
+                          <node class="Sequence" id="124">
+                            <node class="Assignment" id="125">
+                              <property CastRight="false" />
+                              <property Opl="int Self.NpcBehaviac::Array01[9]" />
+                              <property Opr="const int 1" />
+                            </node>
+                            <node class="Assignment" id="126">
+                              <property CastRight="false" />
+                              <property Opl="int Self.NpcBehaviac::Array01[15]" />
+                              <property Opr="const int 1" />
+                            </node>
+                          </node>
+                          <node class="Sequence" id="127">
+                            <node class="Action" id="128">
+                              <property Method="Self.NpcBehaviac::TurnToPlayer()" />
+                              <property ResultOption="BT_SUCCESS" />
+                            </node>
+                            <node class="Action" id="129">
+                              <property Method="Self.NpcBehaviac::MoveStop()" />
+                              <property ResultOption="BT_SUCCESS" />
+                            </node>
+                          </node>
+                        </node>
+                        <node class="IfElse" id="130">
+                          <node class="Condition" id="131">
+                            <property Operator="Equal" />
+                            <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array01[7])" />
+                            <property Opr="const bool false" />
+                          </node>
+                          <node class="Sequence" id="132">
+                            <node class="Condition" id="133">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array01[6])" />
+                              <property Opr="const bool false" />
+                            </node>
+                            <node class="Action" id="134">
+                              <property Method="Self.NpcBehaviac::MoveToPlayer()" />
+                              <property ResultOption="BT_SUCCESS" />
+                            </node>
+                          </node>
+                          <node class="Action" id="135">
+                            <property Method="Self.NpcBehaviac::MoveToRelativePlayerDirect(int Self.NpcBehaviac::Int04,int Self.NpcBehaviac::Int05)" />
+                            <property ResultOption="BT_SUCCESS" />
+                          </node>
+                        </node>
+                      </node>
+                      <node class="IfElse" id="136">
+                        <node class="Condition" id="137">
+                          <property Operator="GreaterEqual" />
+                          <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+                          <property Opr="int Self.NpcBehaviac::Array07[13]" />
+                        </node>
+                        <node class="IfElse" id="138">
+                          <node class="And" id="139">
+                            <node class="Condition" id="140">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[6])" />
+                              <property Opr="const bool false" />
+                            </node>
+                            <node class="Condition" id="141">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[7])" />
+                              <property Opr="const bool true" />
+                            </node>
+                          </node>
+                          <node class="IfElse" id="148">
+                            <node class="Condition" id="149">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsLookAtPlayer(int Self.NpcBehaviac::Int03)" />
+                              <property Opr="const bool true" />
+                            </node>
+                            <node class="Sequence" id="150">
+                              <node class="Assignment" id="151">
+                                <property CastRight="false" />
+                                <property Opl="int Self.NpcBehaviac::Array07[9]" />
+                                <property Opr="const int 1" />
+                              </node>
+                              <node class="Assignment" id="152">
+                                <property CastRight="false" />
+                                <property Opl="int Self.NpcBehaviac::Array07[15]" />
+                                <property Opr="const int 1" />
+                              </node>
+                            </node>
+                            <node class="Sequence" id="153">
+                              <node class="Action" id="154">
+                                <property Method="Self.NpcBehaviac::TurnToPlayer()" />
+                                <property ResultOption="BT_SUCCESS" />
+                              </node>
+                              <node class="Action" id="155">
+                                <property Method="Self.NpcBehaviac::MoveStop()" />
+                                <property ResultOption="BT_SUCCESS" />
+                              </node>
+                            </node>
+                          </node>
+                          <node class="IfElse" id="156">
+                            <node class="Condition" id="157">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[7])" />
+                              <property Opr="const bool false" />
+                            </node>
+                            <node class="Sequence" id="158">
+                              <node class="Condition" id="159">
+                                <property Operator="Equal" />
+                                <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[6])" />
+                                <property Opr="const bool false" />
+                              </node>
+                              <node class="Action" id="160">
+                                <property Method="Self.NpcBehaviac::MoveToPlayer()" />
+                                <property ResultOption="BT_SUCCESS" />
+                              </node>
+                            </node>
+                            <node class="Action" id="161">
+                              <property Method="Self.NpcBehaviac::MoveToRelativePlayerDirect(int Self.NpcBehaviac::Int04,int Self.NpcBehaviac::Int05)" />
+                              <property ResultOption="BT_SUCCESS" />
+                            </node>
+                          </node>
+                        </node>
+                        <node class="IfElse" id="16">
+                          <node class="Condition" id="17">
+                            <property Operator="Equal" />
+                            <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[7])" />
+                            <property Opr="const bool false" />
+                          </node>
+                          <node class="Sequence" id="18">
+                            <node class="Condition" id="19">
+                              <property Operator="Equal" />
+                              <property Opl="Self.NpcBehaviac::IsInRangeOfPlayerNpc(int Self.NpcBehaviac::Array07[6])" />
+                              <property Opr="const bool false" />
+                            </node>
+                            <node class="Action" id="20">
+                              <property Method="Self.NpcBehaviac::MoveToPlayer()" />
+                              <property ResultOption="BT_SUCCESS" />
+                            </node>
+                          </node>
+                          <node class="Action" id="21">
+                            <property Method="Self.NpcBehaviac::MoveToRelativePlayerDirect(int Self.NpcBehaviac::Int04,int Self.NpcBehaviac::Int05)" />
+                            <property ResultOption="BT_SUCCESS" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node class="ReferencedBehavior" id="4">
+                      <property ReferenceBehavior="const string &quot;Npc/Ai/Comm_Patrol&quot;" />
+                      <property Task="Self.BaseBehaviac::TaskArrayIntRef(vector&lt;int&gt; Self.NpcBehaviac::Array04)" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node class="Sequence" id="7">
+      <attachment class="Precondition" id="8" flag="precondition">
+        <property BinaryOperator="And" />
+        <property Operator="Equal" />
+        <property Opl="Self.BaseBehaviac::IsCurCallType(Event)" />
+        <property Opr2="const bool true" />
+        <property Phase="Enter" />
+      </attachment>
+      <attachment class="Precondition" id="9" flag="precondition">
+        <property BinaryOperator="And" />
+        <property Operator="Equal" />
+        <property Opl="Self.BaseBehaviac::IsTargetGameEvent(Npc_OnStart)" />
+        <property Opr2="const bool true" />
+        <property Phase="Enter" />
+      </attachment>
+      <node class="Assignment" id="24">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::Int01" />
+        <property Opr="const int 150" />
+      </node>
+      <node class="Assignment" id="25">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::Int03" />
+        <property Opr="const int 15" />
+      </node>
+      <node class="Assignment" id="26">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::Int02" />
+        <property Opr="const int 25" />
+      </node>
+      <node class="Assignment" id="28">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::Int04" />
+        <property Opr="const int 180" />
+      </node>
+      <node class="Assignment" id="30">
+        <property CastRight="false" />
+        <property Opl="int Self.NpcBehaviac::Int05" />
+        <property Opr="const int 5" />
+      </node>
+      <node class="Assignment" id="33">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array05" />
+        <property Opr="const vector&lt;int&gt; 3:5|5|0" />
+      </node>
+      <node class="Assignment" id="35">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array04" />
+        <property Opr="const vector&lt;int&gt; 5:20|5000|0|150|0" />
+      </node>
+      <node class="Assignment" id="36">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array06" />
+        <property Opr="const vector&lt;int&gt; 5:0|1000|2500|30|90" />
+      </node>
+      <node class="Assignment" id="37">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array07" />
+        <property Opr="const vector&lt;int&gt; 27:0|0|5000|500|500|500|0|40|0|3|0|0|0|0|0|0|0|1|0|0|180|0|20102|0|0|0|10" />
+      </node>
+      <node class="Assignment" id="38">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array01" />
+        <property Opr="const vector&lt;int&gt; 27:0|0|10000|200|500|500|0|40|0|0|0|0|0|0|0|0|0|1|0|0|180|0|20101|0|0|0|30" />
+      </node>
+      <node class="Assignment" id="39">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array02" />
+        <property Opr="const vector&lt;int&gt; 27:0|0|5000|0|500|500|0|40|0|0|0|0|0|0|0|0|0|1|0|0|10|0|20101|0|0|0|30" />
+      </node>
+      <node class="Assignment" id="40">
+        <property CastRight="false" />
+        <property Opl="vector&lt;int&gt; Self.NpcBehaviac::Array03" />
+        <property Opr="const vector&lt;int&gt; 27:0|0|5000|0|500|500|0|40|0|0|0|0|0|0|0|0|0|1|0|0|10|0|20101|0|0|0|30" />
+      </node>
+    </node>
+  </node>
+</behavior>

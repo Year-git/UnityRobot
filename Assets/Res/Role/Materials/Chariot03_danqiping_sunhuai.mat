@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Chariot03_danqiping_sunhuai
+  m_Shader: {fileID: 4800000, guid: 8e45ef517c2602547ae1fee282f5a6e3, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 78190c1a38d915440ab92d3dc44a9eb6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 9dbe76c07f0ec3c44b410e50acc33f4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTexture:
+        m_Texture: {fileID: 2800000, guid: 39218067020fa9d41b45a4af6ded86bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9dbe76c07f0ec3c44b410e50acc33f4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: 21e33512d3d36854d92da7361e8b1348, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap:
+        m_Texture: {fileID: 2800000, guid: 5826dcd21d427f04db1bd98cf77dd4cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 1529a13b57c030c4f8e8305734f29fd5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpeShaTex:
+        m_Texture: {fileID: 2800000, guid: a86723c5e2c17104da1988f89c06969d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: b7cae6f0f81633b4bb0e240738b004b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonRamp:
+        m_Texture: {fileID: 2800000, guid: b7cae6f0f81633b4bb0e240738b004b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ASEOutlineWidth: 0.02
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Emission_slider: 5
+    - _Glossiness: 0
+    - _GlossyReflections: 1
+    - _Highlight03Intensity: 0
+    - _Highlight03Range: 0.5
+    - _Higlight02Intensity: 0
+    - _Higlight02Range: 0.5
+    - _HiglightIntensity: 0.7422851
+    - _HiglightRange: 0.5
+    - _Metallic: 0.5
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OutlineLightness: 0
+    - _OutlineWidth: 0.01581197
+    - _Parallax: 0.02
+    - _RimOffset: 0.6
+    - _RimPower: 0.4
+    - _ShadowIntensity: 0.836
+    - _ShadowRange: 0.732
+    - _SideLightScale: 0
+    - _Smooth: 1
+    - _SpecularHighlights: 1
+    - _SpecularMult: 1
+    - _SpecularRange: 0.9
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Aldobe_color: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0.7254902, b: 1, a: 1}
+    - _EmissionColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _Emissioncolor: {r: 0.9245283, g: 0.1351905, b: 0.1351905, a: 0}
+    - _GlowColor: {r: 0, g: 1.2729762, b: 1.7397346, a: 1}
+    - _Higlightcolor: {r: 0.9245283, g: 0.1351905, b: 0.1351905, a: 0}
+    - _MaxColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
+    - _ShadowColor: {r: 0.6663285, g: 0.6544118, b: 1, a: 1}
+    - _Shadowcolor: {r: 0.9245283, g: 0.1351905, b: 0.1351905, a: 0}
+    - _SideLightColor: {r: 1, g: 1, b: 1, a: 1}

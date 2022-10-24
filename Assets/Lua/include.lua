@@ -1,0 +1,8 @@
+require("Define/include")
+require("Common/include")
+require("Core/include")
+require("Declare/include")
+require("Config/include")
+require("Manager/include")
+require("Logic/include")
+require("View/include")

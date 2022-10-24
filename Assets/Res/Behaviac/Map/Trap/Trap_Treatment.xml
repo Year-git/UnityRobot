@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Map\Trap\Trap_Treatment.xml-->
+<behavior name="Map/Trap/Trap_Treatment" agenttype="TrapBehaviac" version="5">
+  <pars>
+    <par name="nTime" type="int" value="0" />
+    <par name="nNpcInstId" type="int" value="0" />
+  </pars>
+  <node class="Sequence" id="6">
+    <attachment class="Precondition" id="1" flag="precondition">
+      <property BinaryOperator="And" />
+      <property Operator="Equal" />
+      <property Opl="Self.BaseBehaviac::IsCurCallType(Event)" />
+      <property Opr2="const bool true" />
+      <property Phase="Enter" />
+    </attachment>
+    <node class="Or" id="9">
+      <node class="Condition" id="8">
+        <property Operator="Equal" />
+        <property Opl="Self.BaseBehaviac::IsTargetGameEvent(Trap_OnEnter)" />
+        <property Opr="const bool true" />
+      </node>
+      <node class="Condition" id="11">
+        <property Operator="Equal" />
+        <property Opl="Self.BaseBehaviac::IsTargetGameEvent(Trap_OnStay)" />
+        <property Opr="const bool true" />
+      </node>
+    </node>
+    <node class="Condition" id="12">
+      <property Operator="GreaterEqual" />
+      <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+      <property Opr="int Self.TrapBehaviac::nTime" />
+    </node>
+    <node class="Assignment" id="3">
+      <property CastRight="false" />
+      <property Opl="int Self.TrapBehaviac::nNpcInstId" />
+      <property Opr="Self.BaseBehaviac::GetEventParamInt(1)" />
+    </node>
+    <node class="Condition" id="4">
+      <property Operator="Equal" />
+      <property Opl="Self.BaseBehaviac::IsPlayerNpc(int Self.TrapBehaviac::nNpcInstId)" />
+      <property Opr="const bool true" />
+    </node>
+    <node class="Action" id="5">
+      <property Method="Self.BaseBehaviac::NpcTreatmentPercentInput(int Self.TrapBehaviac::nNpcInstId,10)" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+    <node class="Compute" id="7">
+      <property Operator="Add" />
+      <property Opl="int Self.TrapBehaviac::nTime" />
+      <property Opr1="const int 1000" />
+      <property Opr2="Self.BaseBehaviac::GetFrameSynRunTime()" />
+    </node>
+  </node>
+</behavior>

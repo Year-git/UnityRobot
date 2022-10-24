@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\Comm_CircularMove.xml-->
+<behavior name="Npc/Ai/Comm_CircularMove" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="vector&lt;int&gt;" value="0:" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.BaseBehaviac::TaskArrayIntRef(0:)" />
+    <property IsHTN="false" />
+    <node class="IfElse" id="1">
+      <node class="Condition" id="2">
+        <property Operator="Equal" />
+        <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+        <property Opr="const int 0" />
+      </node>
+      <node class="Sequence" id="7">
+        <node class="Assignment" id="8">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+          <property Opr="const int 1" />
+        </node>
+        <node class="Action" id="9">
+          <property Method="Self.NpcBehaviac::MoveToPlace(0,int Self.NpcBehaviac::_$local_task_param_$_0[0])" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+      </node>
+      <node class="IfElse" id="3">
+        <node class="Condition" id="5">
+          <property Operator="Equal" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+          <property Opr="const int 1" />
+        </node>
+        <node class="Sequence" id="11">
+          <node class="Condition" id="6">
+            <property Operator="Equal" />
+            <property Opl="Self.NpcBehaviac::IsMoveReach()" />
+            <property Opr="const bool true" />
+          </node>
+          <node class="Assignment" id="10">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+            <property Opr="const int 2" />
+          </node>
+        </node>
+        <node class="IfElse" id="4">
+          <node class="Condition" id="13">
+            <property Operator="Equal" />
+            <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+            <property Opr="const int 2" />
+          </node>
+          <node class="Sequence" id="12">
+            <node class="Action" id="14">
+              <property Method="Self.NpcBehaviac::MoveToAngle(0)" />
+              <property ResultOption="BT_SUCCESS" />
+            </node>
+            <node class="Action" id="16">
+              <property Method="Self.NpcBehaviac::TurnToPlace(int Self.NpcBehaviac::_$local_task_param_$_0[1])" />
+              <property ResultOption="BT_SUCCESS" />
+            </node>
+          </node>
+          <node class="End" id="15">
+            <property EndOutside="false" />
+            <property EndStatus="const behaviac::EBTStatus BT_SUCCESS" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>

@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Chariot01_Albedo02
+  m_Shader: {fileID: 4800000, guid: 5bb583610ebf6054483ff8661709909d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 374069d28f5ec91418b3efe7ed697b27, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplaceNoise:
+        m_Texture: {fileID: 2800000, guid: cd460ee4ac5c1e746b7a734cc7cc64dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTexture:
+        m_Texture: {fileID: 2800000, guid: 903966a4d64225c41b8a656b02f8f325, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 374069d28f5ec91418b3efe7ed697b27, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimSampler:
+        m_Texture: {fileID: 2800000, guid: 152d0c61672f25c4d947e9eb353319e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpeShaTex:
+        m_Texture: {fileID: 2800000, guid: ed6b776890e4a214298ee8b46e71dab3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ASEOutlineWidth: 0.02
+    - _AnimatedMelt: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Emission_slider: 5
+    - _Glossiness: 0
+    - _Highlight03Intensity: 0
+    - _Highlight03Range: 1
+    - _Higlight02Intensity: 0.25
+    - _Higlight02Range: 0.7
+    - _HiglightIntensity: 0
+    - _HiglightRange: 0.97
+    - _Limit: 2.64
+    - _ManualControl: 0.84
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseMultiply: 0
+    - _NoiseScale: 0.049
+    - _OcclusionStrength: 1
+    - _Oscillation: 2.07
+    - _OutlineLightness: 0
+    - _OutlineWidth: 0.01581197
+    - _Parallax: 0.02
+    - _RimIntensity: 2
+    - _ShadowIntensity: 0.7956449
+    - _ShadowRange: 0.513
+    - _Smoothness: 0.664
+    - _Specilar: 0.469
+    - _SpecularMult: 0.33
+    - _SpecularRange: 0.9
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Aldobe_color: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+    - _Color0: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 0}
+    - _Color1: {r: 0, g: 2.101961, b: 8, a: 0}
+    - _Color2: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
+    - _Emission: {r: 0, g: 0.64705896, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Emission_Color: {r: 0, g: 2.101961, b: 8, a: 0}
+    - _Emissioncolor: {r: 0, g: 2.447059, b: 8, a: 0}
+    - _Higlightcolor: {r: 1, g: 1, b: 1, a: 0}
+    - _OuColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Outline_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 0}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
+    - _ShadowColor: {r: 0.6663285, g: 0.6544118, b: 1, a: 1}
+    - _Shadow_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 0}
+    - _Shadowcolor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}

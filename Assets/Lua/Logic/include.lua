@@ -1,0 +1,8 @@
+require("Logic/LoginLogic")
+require("Logic/CreateLogic")
+require("Logic/MainLogic")
+require("Logic/ReadLogic")
+require("Logic/RefitLogic")
+require("Logic/BattleLogic")
+require("Logic/CheckpointLogic")
+require("Logic/ShopLogic")

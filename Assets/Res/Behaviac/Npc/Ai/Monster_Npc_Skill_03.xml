@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Npc\Ai\Monster_Npc_Skill_03.xml-->
+<behavior name="Npc/Ai/Monster_Npc_Skill_03" agenttype="NpcBehaviac" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="vector&lt;int&gt;" value="0:" />
+    <par name="LevelTime" type="int" value="0" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.BaseBehaviac::TaskArrayIntRef(0:)" />
+    <property IsHTN="false" />
+    <node class="IfElse" id="22">
+      <node class="Condition" id="24">
+        <property Operator="Equal" />
+        <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[16]" />
+        <property Opr="const int 1" />
+      </node>
+      <node class="IfElse" id="95">
+        <node class="And" id="38">
+          <node class="Condition" id="96">
+            <property Operator="GreaterEqual" />
+            <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+            <property Opr="int Self.NpcBehaviac::_$local_task_param_$_0[10]" />
+          </node>
+          <node class="Condition" id="41">
+            <property Operator="GreaterEqual" />
+            <property Opl="int Self.NpcBehaviac::LevelTime" />
+            <property Opr="const int 1" />
+          </node>
+        </node>
+        <node class="IfElse" id="97">
+          <node class="And" id="39">
+            <node class="Condition" id="99">
+              <property Operator="GreaterEqual" />
+              <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+              <property Opr="int Self.NpcBehaviac::_$local_task_param_$_0[11]" />
+            </node>
+            <node class="Condition" id="42">
+              <property Operator="GreaterEqual" />
+              <property Opl="int Self.NpcBehaviac::LevelTime" />
+              <property Opr="const int 2" />
+            </node>
+          </node>
+          <node class="IfElse" id="100">
+            <node class="And" id="40">
+              <node class="Condition" id="102">
+                <property Operator="GreaterEqual" />
+                <property Opl="Self.BaseBehaviac::GetFrameSynRunTime()" />
+                <property Opr="int Self.NpcBehaviac::_$local_task_param_$_0[12]" />
+              </node>
+              <node class="Condition" id="43">
+                <property Operator="GreaterEqual" />
+                <property Opl="int Self.NpcBehaviac::LevelTime" />
+                <property Opr="const int 3" />
+              </node>
+            </node>
+            <node class="Sequence" id="103">
+              <node class="IfElse" id="104">
+                <node class="Condition" id="105">
+                  <property Operator="Equal" />
+                  <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[15]" />
+                  <property Opr="const int 1" />
+                </node>
+                <node class="Noop" id="108" />
+                <node class="Action" id="109">
+                  <property Method="Self.NpcBehaviac::MoveStop()" />
+                  <property ResultOption="BT_SUCCESS" />
+                </node>
+              </node>
+              <node class="IfElse" id="13">
+                <node class="Condition" id="17">
+                  <property Operator="GreaterEqual" />
+                  <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[18]" />
+                  <property Opr="int Self.NpcBehaviac::_$local_task_param_$_0[17]" />
+                </node>
+                <node class="Sequence" id="18">
+                  <node class="Assignment" id="110">
+                    <property CastRight="false" />
+                    <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[9]" />
+                    <property Opr="const int 0" />
+                  </node>
+                  <node class="Assignment" id="51">
+                    <property CastRight="false" />
+                    <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[18]" />
+                    <property Opr="const int 0" />
+                  </node>
+                  <node class="Assignment" id="12">
+                    <property CastRight="false" />
+                    <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[15]" />
+                    <property Opr="const int 0" />
+                  </node>
+                  <node class="Assignment" id="3">
+                    <property CastRight="false" />
+                    <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[21]" />
+                    <property Opr="const int 1" />
+                  </node>
+                </node>
+                <node class="Noop" id="15" />
+              </node>
+              <node class="Assignment" id="10">
+                <property CastRight="false" />
+                <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[14]" />
+                <property Opr="const int 0" />
+              </node>
+              <node class="Assignment" id="112">
+                <property CastRight="false" />
+                <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[16]" />
+                <property Opr="const int 0" />
+              </node>
+            </node>
+            <node class="Sequence" id="36">
+              <node class="Assignment" id="37">
+                <property CastRight="false" />
+                <property Opl="int Self.NpcBehaviac::LevelTime" />
+                <property Opr="const int 3" />
+              </node>
+              <node class="Noop" id="113" />
+            </node>
+          </node>
+          <node class="Sequence" id="31">
+            <node class="Assignment" id="32">
+              <property CastRight="false" />
+              <property Opl="int Self.NpcBehaviac::LevelTime" />
+              <property Opr="const int 2" />
+            </node>
+            <node class="IfElse" id="114">
+              <node class="Condition" id="115">
+                <property Operator="Equal" />
+                <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[14]" />
+                <property Opr="const int 0" />
+              </node>
+              <node class="Sequence" id="116">
+                <node class="Assignment" id="119">
+                  <property CastRight="false" />
+                  <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[14]" />
+                  <property Opr="const int 1" />
+                </node>
+                <node class="Action" id="1">
+                  <property Method="Self.NpcBehaviac::MoveToAngle(0)" />
+                  <property ResultOption="BT_SUCCESS" />
+                </node>
+                <node class="IfElse" id="120">
+                  <node class="Condition" id="121">
+                    <property Operator="Equal" />
+                    <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[15]" />
+                    <property Opr="const int 1" />
+                  </node>
+                  <node class="Sequence" id="9">
+                    <node class="IfElse" id="11">
+                      <node class="Condition" id="16">
+                        <property Operator="Greater" />
+                        <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[22]" />
+                        <property Opr="const int 0" />
+                      </node>
+                      <node class="Action" id="122">
+                        <property Method="Self.NpcBehaviac::DoSkill(int Self.NpcBehaviac::_$local_task_param_$_0[22])" />
+                        <property ResultOption="BT_SUCCESS" />
+                      </node>
+                      <node class="Noop" id="19" />
+                    </node>
+                    <node class="IfElse" id="14">
+                      <node class="Condition" id="21">
+                        <property Operator="Greater" />
+                        <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[24]" />
+                        <property Opr="const int 0" />
+                      </node>
+                      <node class="Action" id="23">
+                        <property Method="Self.NpcBehaviac::DoSkill(int Self.NpcBehaviac::_$local_task_param_$_0[24])" />
+                        <property ResultOption="BT_SUCCESS" />
+                      </node>
+                      <node class="Noop" id="27" />
+                    </node>
+                  </node>
+                  <node class="Noop" id="123" />
+                </node>
+              </node>
+              <node class="Action" id="45">
+                <property Method="Self.NpcBehaviac::MoveToAngle(0)" />
+                <property ResultOption="BT_SUCCESS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node class="Sequence" id="8">
+          <node class="Assignment" id="29">
+            <property CastRight="false" />
+            <property Opl="int Self.NpcBehaviac::LevelTime" />
+            <property Opr="const int 1" />
+          </node>
+          <node class="Noop" id="5" />
+        </node>
+      </node>
+      <node class="Sequence" id="25">
+        <node class="IfElse" id="26">
+          <node class="Condition" id="28">
+            <property Operator="Equal" />
+            <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[18]" />
+            <property Opr="const int 0" />
+          </node>
+          <node class="Compute" id="130">
+            <property Operator="Add" />
+            <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[13]" />
+            <property Opr1="int Self.NpcBehaviac::_$local_task_param_$_0[2]" />
+            <property Opr2="Self.BaseBehaviac::GetFrameSynRunTime()" />
+          </node>
+          <node class="Sequence" id="33">
+            <node class="Assignment" id="34">
+              <property CastRight="false" />
+              <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[19]" />
+              <property Opr="const int 1" />
+            </node>
+            <node class="Noop" id="55" />
+          </node>
+        </node>
+        <node class="Compute" id="131">
+          <property Operator="Add" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[10]" />
+          <property Opr1="int Self.NpcBehaviac::_$local_task_param_$_0[3]" />
+          <property Opr2="Self.BaseBehaviac::GetFrameSynRunTime()" />
+        </node>
+        <node class="Compute" id="132">
+          <property Operator="Add" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[11]" />
+          <property Opr1="int Self.NpcBehaviac::_$local_task_param_$_0[4]" />
+          <property Opr2="int Self.NpcBehaviac::_$local_task_param_$_0[10]" />
+        </node>
+        <node class="Compute" id="133">
+          <property Operator="Add" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[12]" />
+          <property Opr1="int Self.NpcBehaviac::_$local_task_param_$_0[5]" />
+          <property Opr2="int Self.NpcBehaviac::_$local_task_param_$_0[11]" />
+        </node>
+        <node class="Compute" id="46">
+          <property Operator="Add" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[18]" />
+          <property Opr1="int Self.NpcBehaviac::_$local_task_param_$_0[18]" />
+          <property Opr2="const int 1" />
+        </node>
+        <node class="Assignment" id="47">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[16]" />
+          <property Opr="const int 1" />
+        </node>
+        <node class="Assignment" id="2">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[21]" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="Assignment" id="7">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[23]" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="Assignment" id="35">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::_$local_task_param_$_0[25]" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="Assignment" id="6">
+          <property CastRight="false" />
+          <property Opl="int Self.NpcBehaviac::LevelTime" />
+          <property Opr="const int 0" />
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>
